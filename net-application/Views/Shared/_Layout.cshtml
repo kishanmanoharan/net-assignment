@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SportsPro</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@v1.0.0-beta.2/dist/basket.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-blue">
+            <a href="#" class="navbar-brand">SportsPro</a>
+            <a class="navbar-collapse">☰</a>
+            <div class="navbar-items">
+                <a href="#home" class="">Home</a>
+                <a href="#products" class="">Products</a>
+                <a href="#technitians" class="">Technicians</a>
+                <a href="#customers" class="">Customers</a>
+                <a href="#incident" class="">Incident</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center">
+            <hr>
+            <h5>SportsPro Inc. All rights reserved. Copyright 2021</h5>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/gh/blacksector/basket@v1.0.0-beta.2/dist/basket.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
