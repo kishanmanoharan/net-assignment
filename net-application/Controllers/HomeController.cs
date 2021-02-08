@@ -23,10 +23,26 @@ namespace net_application.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Home()
         {
             return View();
         }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Products()
+        {
+            return View();
+        }
+
+        public IActionResult Technicians()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
